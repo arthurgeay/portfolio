@@ -1,0 +1,89 @@
+a:hover
+{
+  transition: color 1s;
+}
+
+li
+{
+  list-style-type: none;
+}
+
+header
+{
+  color: white;
+}
+
+/* Background Image */
+#background
+{
+  background: linear-gradient(
+ rgba(0, 0, 73, 0.55),
+ rgba(0, 0, 73, 0.55)
+ ),url('../img/background.jpeg');
+ background-size:cover;
+ background-repeat:no-repeat;
+ height: 400px;
+}
+
+/* END BACKGROUND */
+
+/* Socials & Icons */
+
+#socials
+{
+  padding-top: 90px;
+}
+
+.icon-social
+{
+  color: rgb(179, 180, 185);
+}
+
+#linkedin-icon:hover
+{
+  transition: color 0.8s;
+  color: rgb(17,120,179);
+}
+
+#github-icon:hover
+{
+  transition: color 0.8s;
+  color: white;
+}
+
+#twitter-icon:hover
+{
+  transition: color 0.8s;
+  color: rgb(42, 163, 239);
+}
+
+#youtube-icon:hover
+{
+  transition: color 0.8s;
+  color: rgb(252, 12, 28);
+}
+
+#icons
+{
+  margin-top: 40px;
+}
+
+/*  END SOCIALS & ICONS */
+
+/** img profil **/
+.profile-img
+{
+  margin-top: 35px;
+  border: 6px solid rgb(242,242, 242);
+}
+
+/* Section about */
+#about
+{
+  margin-top: 130px;
+}
+
+.hobies
+{
+  color: rgb(125, 134, 142);
+}
