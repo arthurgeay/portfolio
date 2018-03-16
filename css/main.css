@@ -1,17 +1,50 @@
-a:hover
+
+/* GENERAL */
+
+body,a
 {
-  transition: color 1s;
+  color: rgb(162, 167, 169);
 }
 
-li
+body h2
 {
-  list-style-type: none;
+  color: rgb(46, 63, 81);
 }
+
+.colored, section h3
+{
+  color: rgb(122, 132, 139);
+}
+
+a
+{
+  transition: color 0.5s;
+}
+
+td a:hover, .navbar-light .navbar-nav .nav-link:hover
+{
+  color: rgb(230, 77, 67);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
 
 header
 {
   color: white;
 }
+
+th
+{
+  padding-right: 30px;
+}
+
+td
+{
+  text-align: center;
+}
+
+/* END GENERAL */
 
 /* Background Image */
 #background
@@ -81,9 +114,206 @@ header
 #about
 {
   margin-top: 130px;
+  padding-bottom: 45px;
 }
 
-.hobies
+table
 {
-  color: rgb(125, 134, 142);
+  display: flex;
+  justify-content: center;
 }
+
+#infos-hobbies, #list-hobbies
+{
+  margin-top: 40px;
+}
+
+.infos-list
+{
+  margin-top: 30px;
+}
+
+.btn-primary, .btn-primary:visited
+{
+  background: rgb(230, 77, 67);
+  border: 1px solid rgb(232, 79, 69);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active
+{
+  background: rgb(210, 50, 40)!important;
+  border: 1px solid rgb(232, 79, 69)!important;
+}
+
+.circle-icon {
+    background: rgb(241, 241, 241);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+    color: rgb(126, 135, 142);
+    transition: color 0.5s, background 0.5s;
+    margin: 5px;
+}
+
+.circle-icon:hover
+{
+  background: rgb(46, 62, 79);
+  color: white;
+  transition: color 0.5s, background 0.5s;
+}
+
+/* END SECTION ABOUT */
+
+
+
+/* Section Resume */
+
+#resume
+{
+  background: rgb(241, 242, 247);
+}
+
+#resume h2
+{
+  margin-top: 80px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* contain around content */
+.contain {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.contain::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the contain to the left */
+.left {
+  left: 0;
+}
+
+/* Place the contain to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left contain (pointing right) */
+.left:hover::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  transition: border-color 0.5s;
+}
+
+/* Add arrows to the right contain (pointing left) */
+.right:hover::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  transition: border-color 0.5s;
+}
+
+/* Fix the circle for contains on the right side */
+.right::after {
+  left: -13px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  transition: background-color 0.5s;
+}
+
+.content:hover
+{
+  background-color: white;
+  transition: background-color 0.5s;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width contains */
+  .contain {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right contains behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+/* END SECTION RESUME  */
