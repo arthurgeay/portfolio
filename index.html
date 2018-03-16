@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/circle.css">
     <title>Arthur Geay - Portfolio</title>
   </head>
   <body>
@@ -108,30 +109,137 @@
         </div>
       </div>
 
-      <div id="resume" class="container-fluid">
+      <section id="resume" class="container-fluid">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <h2 class="text-center">Parcours</h2>
               <hr>
-              <div class="timeline">
-                <div class="contain left">
-                  <div class="content">
-                    <h2>2017</h2>
-                    <p>Lorem ipsum..</p>
+
+              <ul class="timeline">
+                <li><div class="tltitle"><i class="fas fa-briefcase"></i> Expériences</div></li>
+                <li>
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
+                      <h4>Réparateur de smartphone</h4>
+                      <p>Online Repair <span style="color: rgb(230, 77, 67);">•</span> Septembre 2016 - Avril 2017</p>
+                    </div>
+                    <div class="tl-body">
+                      <p>Création d'une auto-entreprise de réparation de smartphone avec une boutique en ligne.</p>
+                      <p>Les missions étaient principalement des réparations de smartphones (majoritairement des iPhones) qui avaient des problèmes de batterie et/ou d'écran.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="contain right">
-                  <div class="content">
-                    <h2>2016</h2>
-                    <p>Lorem ipsum..</p>
+                </li>
+
+                <li class="timeline-inverted">
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
+                      <h4>Intérimaire - Agro-alimentaire</h4>
+                      <p>Gastronome <span style="color: rgb(230, 77, 67);">•</span> Mars 2016 - Août 2016</p>
+                    </div>
+                    <div class="tl-body">
+                      <p>Gestion de l'approvisionnement des opérateurs & gestion de la traçabilité (viandes et ingrédients).</p>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </li>
+
+                <li><div class="tltitle"><i class="fas fa-graduation-cap"></i> Formation</div></li>
+
+                <li>
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
+                      <h4>Chef de projet Multimédia</h4>
+                      <p>OpenClassrooms / IESA Multimédia <span style="color: rgb(230, 77, 67);">•</span> Janvier 2017 - Janvier 2018</p>
+                    </div>
+                    <div class="tl-body">
+                      <p>Parcours de formation fonctionnant en "mode projet". </p>
+                      <p>Six projets professionnalisant ont été réalisés durant le parcours (système de billeterie en ligne pour le Musée du Louvre, application web collaborative de saisie d'observation...)</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
+                      <h4>L1 Arts du Spectacle</h4>
+                      <p>Université de Poitiers <span style="color: rgb(230, 77, 67);">•</span> 2015 - 2016 </p>
+                    </div>
+                    <div class="tl-body">
+                      <p>Etude des arts du spectacle (Cinéma & Théâtre).</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
+                      <h4>Baccalauréat ES</h4>
+                      <p>Lycée Maurice Genevoix <span style="color: rgb(230, 77, 67);">•</span> 2015</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="skills" class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">Compétences</h2>
+            <hr>
+            <div class="row">
+              <div class="col-lg-3 text-center">
+                <div class="c100 p75 big">
+                    <span>75%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <p class="skills-colored">HTML / CSS</p>
+            </div>
+            <div class="col-lg-3 text-center">
+              <div class="c100 p60 big">
+                  <span>60%</span>
+                  <div class="slice">
+                      <div class="bar"></div>
+                      <div class="fill"></div>
+                  </div>
+              </div>
+              <p class="skills-colored">PHP & SQL</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="c100 p50 big">
+                <span>50%</span>
+                <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                </div>
+            </div>
+            <p class="skills-colored">Javascript</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="c100 p50 big">
+              <span>50%</span>
+              <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+              </div>
+          </div>
+          <p class="skills-colored">Symfony</p>
       </div>
+         </div>
+        </div>
+       </div>
+      </section>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
