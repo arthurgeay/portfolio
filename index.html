@@ -22,19 +22,19 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#about">A propos de moi <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#about">A propos <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Mon parcours</a>
+                    <a class="nav-link" href="#resume">Mon parcours</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Compétences</a>
+                    <a class="nav-link" href="#skills">Compétences</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Réalisations</a>
+                    <a class="nav-link" href="#project">Réalisations</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -83,10 +83,6 @@
                   <tr>
                     <th class="colored">Site web :</th>
                     <td><a href="https://arthurgeay.fr">arthurgeay.fr</a></td>
-                  </tr>
-                  <tr>
-                    <th class="colored">Adresse :</th>
-                    <td>La Javrelière 79320 MONCOUTANT</td>
                   </tr>
 
                 </table>
@@ -390,6 +386,30 @@
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center">Contact</h2>
+              <hr>
+              <form action="mail.php" method="POST">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Prénom" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Adresse e-mail" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" class="form-control" placeholder="Message" rows="6" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary col-md-12">Envoyer</button>
+            </form>
 
           </div>
         </div>
