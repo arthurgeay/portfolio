@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -396,24 +397,53 @@
             <div class="col-md-12">
               <h2 class="text-center">Contact</h2>
               <hr>
+
+              <?php
+                if(isset($_SESSION['success']) && !empty($_SESSION['success']))
+                {
+              ?>
+              <div class="alert alert-success">
+                <?= $_SESSION['success']; ?>
+              </div>
+              <?php unset($_SESSION['success']); } ?>
+
+
+              <?php if(isset($_SESSION['error']) && !empty($_SESSION['error']))
+                {
+              ?>
+              <div class="alert alert-danger">
+                <?= $_SESSION['error']; ?>
+              </div>
+              <?php unset($_SESSION['error']);
+              }
+              ?>
+
               <form action="mail.php" method="POST">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Prénom" required>
+                  <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Prénom" value="<?php if(isset($_SESSION['firstname'])) echo $_SESSION['firstname']; ?>" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="email" id="email" name="email" class="form-control" placeholder="Adresse e-mail" required>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Adresse e-mail" value="<?php if(isset($_SESSION['email'])) echo $_SESSION['email']; ?>" required>
                 </div>
               </div>
               <div class="form-group">
-                <textarea id="message" name="message" class="form-control" placeholder="Message" rows="6" required></textarea>
+                <textarea id="message" name="message" class="form-control" placeholder="Message" rows="6" required><?php if(isset($_SESSION['message'])) echo $_SESSION['message']; ?></textarea>
               </div>
-              <button type="submit" class="btn btn-primary col-md-12">Envoyer</button>
+              <button type="submit" class="btn btn-primary col-md-12"><i class="fas fa-share-square"></i> Envoyer</button>
             </form>
 
           </div>
         </div>
       </section>
+
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center"><a href="index.php">Arthur Geay • Portfolio</a> - Design inspiré de <a href="https://themeforest.net/item/md-resume-psd-template/7640505?s_rank=1">bigpsfan</a></p>
+          </div>
+        </div>
+      </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -421,5 +451,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/notify.js"></script>
   </body>
 </html>

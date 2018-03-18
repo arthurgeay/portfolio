@@ -27,7 +27,7 @@ a
   transition: color 0.5s;
 }
 
-td a:hover, .navbar-light .navbar-nav .nav-link:hover
+a:hover, .navbar-light .navbar-nav .nav-link:hover
 {
   color: rgb(230, 77, 67);
   text-decoration: none;
@@ -562,6 +562,11 @@ li:hover .timeline-panel:after
 
 /* Section Contact */
 
+#contact
+{
+  padding-bottom: 55px;
+}
+
 .form-control
 {
   background-color: rgb(242, 242, 242);
@@ -573,5 +578,19 @@ li:hover .timeline-panel:after
     border-color: rgb(230, 77, 67);
 }
 
+form
+{
+  margin-top: 55px;
+}
 
 /* END SECTION CONTACT */
+
+footer
+{
+  background: rgb(241, 242, 247);
+}
+
+footer p
+{
+  margin-top: 15px;
+}
