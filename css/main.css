@@ -1,15 +1,32 @@
 
 /* GENERAL */
 
+.overflow-x
+{
+  overflow-x: hidden;
+}
+
 body,a
 {
   color: rgb(162, 167, 169);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, .tltitle
+{
+  font-family : 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2
+{
+  font-size: 2.3em;
 }
 
 body h2, .colored-p
 {
-  color: rgb(46, 63, 81);
-  text-transform: uppercase;
+  color: rgb(48, 61, 79);
 }
 
 section h2
@@ -34,10 +51,19 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover
   transition: color 0.5s;
 }
 
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link
+{
+  color: rgb(230, 77, 67);
+}
 
 header
 {
   color: white;
+}
+
+nav
+{
+  box-shadow: 1px 0px 8px black;
 }
 
 th
@@ -71,6 +97,13 @@ td
 #socials
 {
   padding-top: 90px;
+}
+
+#socials h1, #socials h3
+{
+  font-family: inherit;
+  text-transform: none;
+  font-weight: normal;
 }
 
 .icon-social
@@ -129,9 +162,25 @@ table
   justify-content: center;
 }
 
-#infos-hobbies, #list-hobbies
+#list-hobbies
 {
   margin-top: 30px;
+}
+
+#infos-hobbies
+{
+  margin-top: 45px;
+}
+
+#infos-hobbies h3
+{
+  font-size: 1.4em;
+}
+
+@media (max-width: 995px) {
+  #table-info {
+    margin-bottom: 50px;
+  }
 }
 
 .infos-list
@@ -413,13 +462,10 @@ li:hover .timeline-panel:after
   .timeline li .timeline-panel {
     width: 44%;
   }
-}
 
-@media (max-width: 700px) {
-  .page-header h1 { font-size: 1.8em; }
-
-  ul.timeline:before {
-    left: 40px;
+  .tl-body
+  {
+    text-align: left;
   }
 }
 
@@ -466,6 +512,44 @@ li:hover .timeline-panel:after
     left: -14px;
     right: auto;
   }
+
+  li .timeline-panel
+  {
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  li .timeline-panel:before
+  {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
+
+  li .timeline-panel:after
+  {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+  }
 }
 
 /* END SECTION RESUME  */
@@ -476,6 +560,14 @@ li:hover .timeline-panel:after
 {
   margin-top: 25px;
   padding-bottom: 75px;
+}
+
+#skills-percentage p
+{
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .colored-p
@@ -580,6 +672,11 @@ li:hover .timeline-panel:after
 form
 {
   margin-top: 55px;
+}
+
+#submitForm
+{
+  margin-top: 15px;
 }
 
 /* END SECTION CONTACT */

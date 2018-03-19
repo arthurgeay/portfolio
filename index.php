@@ -1,16 +1,20 @@
-<?php session_start(); ?>
+<?php session_start();
+require_once('parameters.php');
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/circle.css">
     <title>Arthur Geay - Portfolio</title>
   </head>
-  <body id="page-top">
+  <body id="page-top" class="overflow-x">
       <header>
         <div id="background">
           <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
@@ -60,13 +64,13 @@
       <div class="container">
         <div class="row">
           <section id="about" class="col-md-12">
-            <h2 class="text-center">A propos de moi</h2>
+            <h2 class="text-center">A propos</h2>
             <hr>
             <p class="text-center text-justify colored">Passionné d'informatique et de nouvelles technologies, mon projet professionnel s'oriente vers les métiers du web<br />
             et plus particulièrement celui de développeur web.</p>
 
             <div id="infos-hobbies" class="row">
-              <div class="col-lg-6">
+              <div id="table-info" class="col-lg-6">
                 <h3 class="text-center">Informations personnelles</h3>
                 <table class="table infos-list">
                   <tr>
@@ -191,7 +195,7 @@
             <h2 class="text-center">Compétences</h2>
             <hr>
             <div id="skills-percentage" class="row">
-              <div class="col-md-3 col-sm-3 col-4 percent text-center">
+              <div class="col-md-3 col-sm-3 col-6 percent text-center">
                 <div class="c100 p80 center tomato">
                   <span>80%</span>
                   <div class="slice">
@@ -201,7 +205,7 @@
                 </div>
                 <p class="colored-p">Html & CSS</p>
               </div>
-              <div class="col-md-3 col-sm-3 col-4 percent text-center">
+              <div class="col-md-3 col-sm-3 col-6 percent text-center">
                 <div class="c100 p65 center tomato">
                   <span>65%</span>
                   <div class="slice">
@@ -211,7 +215,7 @@
                 </div>
                 <p class="colored-p">Php & Sql</p>
               </div>
-              <div class="col-md-3 col-sm-3 col-4 percent text-center">
+              <div class="col-md-3 col-sm-3 col-6 percent text-center">
                 <div class="c100 p60 center tomato">
                   <span>60%</span>
                   <div class="slice">
@@ -221,7 +225,7 @@
                 </div>
                 <p class="colored-p">Symfony</p>
               </div>
-              <div class="col-md-3 col-sm-3 col-4 percent text-center">
+              <div class="col-md-3 col-sm-3 col-6 percent text-center">
                 <div class="c100 p60 center tomato">
                   <span>60%</span>
                   <div class="slice">
@@ -231,7 +235,7 @@
                 </div>
                 <p class="colored-p">Javascript</p>
               </div>
-              <div class="col-md-3 col-sm-3 col-4 percent text-center">
+              <div class="col-md-3 col-sm-3 col-6 percent text-center">
                 <div class="c100 p80 center tomato">
                   <span>80%</span>
                   <div class="slice">
@@ -241,7 +245,7 @@
                 </div>
                 <p class="colored-p">WordPress</p>
               </div>
-              <div class="col-md-3 col-sm-3 col-4 percent text-center">
+              <div class="col-md-3 col-sm-3 col-6 percent text-center">
                 <div class="c100 p55 center tomato">
                   <span>55%</span>
                   <div class="slice">
@@ -430,7 +434,8 @@
               <div class="form-group">
                 <textarea id="message" name="message" class="form-control" placeholder="Message" rows="6" required><?php if(isset($_SESSION['message'])) echo $_SESSION['message']; ?></textarea>
               </div>
-              <button type="submit" class="btn btn-primary col-md-12"><i class="fas fa-share-square"></i> Envoyer</button>
+              <div class="g-recaptcha" data-sitekey="<?= $publicKey; ?>"></div>
+              <button id="submitForm" type="submit" class="btn btn-primary col-md-12"><i class="fas fa-share-square"></i> Envoyer</button>
             </form>
 
           </div>
@@ -453,5 +458,6 @@
     <script src="js/gallery.js"></script>
     <script src="js/notify.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </body>
 </html>
