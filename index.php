@@ -298,7 +298,7 @@ require_once('parameters.php');
             <div class="col-md-4 img-wrap school-item">
               <a href="https://moncoutant.arthurgeay.fr/">
                 <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/moncoutant2.png" alt="Card image cap">
+                <img class="card-img-top" src="img/moncoutant2.jpg" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text text-center">Réalisation d'un site web pour les activités culturelles de ma ville. <br />
                     <span class="badge badge-pill badge-danger">HTML & CSS</span>
@@ -311,7 +311,7 @@ require_once('parameters.php');
 
             <div class="col-md-4 img-wrap school-item">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/project.png" alt="Card image cap">
+                <img class="card-img-top" src="img/project.jpg" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text text-center">Simulation - Gestion de projet du salon du chocolat de Paris. <br />
                     <span class="badge badge-pill badge-light">Gestion de projet</span>
@@ -323,7 +323,7 @@ require_once('parameters.php');
             <div class="col-md-4 img-wrap school-item">
               <a href="https://jeanforteroche.arthurgeay.fr/">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="img/forteroche2.png" alt="Card image cap">
+                  <img class="card-img-top" src="img/forteroche2.jpg" alt="Card image cap">
                   <div class="card-body">
                     <p class="card-text text-center">Réalisation d'un blog pour un écrivain ne souhaitant pas avoir un blog sous WordPress.<br />
                       <span class="badge badge-pill badge-danger">HTML & CSS</span>
@@ -338,7 +338,7 @@ require_once('parameters.php');
             <div class="col-md-4 img-wrap school-item">
               <a href="https://louvre.arthurgeay.fr/">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="img/louvre2.png" alt="Card image cap">
+                  <img class="card-img-top" src="img/louvre2.jpg" alt="Card image cap">
                   <div class="card-body">
                     <p class="card-text text-center">Réalisation d'un système de billeterie pour le musée du Louvre. <br />
                       <span class="badge badge-pill badge-danger">HTML & CSS</span>
@@ -353,7 +353,7 @@ require_once('parameters.php');
             <div class="col-md-4 img-wrap school-item">
               <a href="https://nao.arthurgeay.fr/">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="img/nao.png" alt="Card image cap">
+                  <img class="card-img-top" src="img/nao.jpg" alt="Card image cap">
                   <div class="card-body">
                     <p class="card-text text-center">Réalisation d'une application web collaborative de saisie d'observation d'espèces d'oiseaux. <br />
                       <span class="badge badge-pill badge-danger">HTML & CSS</span>
