@@ -53,7 +53,6 @@ require_once('parameters.php');
               <a class="icon-social" href="https://linkedin.com/in/arthur-geay"><i id="linkedin-icon"class="fab fa-linkedin" style="font-size: 2em;"></i></a>
               <a class="icon-social" href="https://github.com/arthurgeay"><i id="github-icon" class="fab fa-github-square" style="font-size: 2em;"></i></a>
               <a class="icon-social" href="https://twitter.com/arthur_geay"><i id="twitter-icon" class="fab fa-twitter-square" style="font-size: 2em;"></i></a>
-              <a class="icon-social" href="https://www.youtube.com/channel/UC6_WHYqi64MgoKm7QAKEoJw"><i id="youtube-icon" class="fab fa-youtube-square" style="font-size: 2em;"></i></a>
             </div>
             <img class="rounded-circle profile-img" src="img/profile.jpeg" alt="Photo de profil" width="200px" />
           </div>
