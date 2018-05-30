@@ -40,35 +40,45 @@ require_once('parameters.php');
   </html>
   ';
 
+  $_SESSION['error'] = [];
 
   $decode = json_decode(file_get_contents($api_url), true);
 
 	if ($decode['success'] == false) {
-    $_SESSION['error'] = 'Le champ captcha ne peut être vide.';
-    header('Location: index.php#contact');
+    $_SESSION['error'][] = 'Le champ captcha ne peut être vide.';
 	}
-  else
+
+  if(empty($_POST['firstname']) || trim($_POST['firstname']) == '' || empty($_POST['email']) || trim($_POST['email']) == '' || empty($_POST['message']) || trim($_POST['message']) == '')
   {
-    if(empty($_POST['firstname']) || trim($_POST['firstname']) == '' || empty($_POST['email']) || trim($_POST['email']) == '' || empty($_POST['message']) || trim($_POST['message']) == '')
-    {
-      $_SESSION['error'] = 'Les champs ne peuvent être vides.';
-      header('Location: index.php#contact');
-    }
+    $_SESSION['error'][] = 'Les champs ne peuvent être vides.';
+  }
 
-    elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
-    {
-      $_SESSION['error'] = 'Veuillez saisir une adresse e-mail valide.';
-      header('Location: index.php#contact');
-    }
+  if(!isset($_POST['accept-form']))
+  {
+    $_SESSION['error'][] = 'Vous devez accepter les conditions de soumission du formulaire pour valider le formulaire !';
+  }
 
-    else {
+  if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
+  {
+    $_SESSION['error'][] = 'Veuillez saisir une adresse e-mail valide.';
+  }
+
+
+  if(!empty($_SESSION['error']))
+  {
+    header('Location: index.php#contact');
+  }
+  else {
       $send = mail($mail, $subject, $message, $header);
-
       if($send)
       {
         $_SESSION['success'] = 'Votre message a bien été envoyé !';
         unset($_SESSION['email'], $_SESSION['firstname'], $_SESSION['message']);
         header('Location: index.php#contact');
       }
-    }
+      else
+      {
+        $_SESSION['error'][] = "Une erreur s'est produite lors de l'envoi de l'e-mail. Veuillez réessayer!";
+        header('Location: index.php#contact');
+      }
   }

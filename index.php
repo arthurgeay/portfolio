@@ -7,12 +7,14 @@ require_once('parameters.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Arthur Geay. Développeur web PHP/Symfony & Chef de projet">
+    <meta name="keywords" content="developpeur, web, developpeur web, arthur geay, Arthur Geay, php, sql, symfony, javascript, bootstrap, gestion de projet, freelance">
     <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/circle.css">
-    <title>Arthur Geay - Portfolio</title>
+    <title>Portfolio - Arthur Geay</title>
   </head>
   <body id="page-top" class="overflow-x">
       <header>
@@ -48,7 +50,7 @@ require_once('parameters.php');
 
           <div id="socials" class="text-center">
             <h1>Arthur Geay</h1>
-            <h3>Etudiant - Développeur web</h3>
+            <h3>Etudiant & Développeur web</h3>
             <div id="icons">
               <a class="icon-social" href="https://linkedin.com/in/arthur-geay"><i id="linkedin-icon"class="fab fa-linkedin" style="font-size: 2em;"></i></a>
               <a class="icon-social" href="https://github.com/arthurgeay"><i id="github-icon" class="fab fa-github-square" style="font-size: 2em;"></i></a>
@@ -66,7 +68,8 @@ require_once('parameters.php');
             <h2 class="text-center">A propos</h2>
             <hr>
             <p class="text-center text-justify colored">Passionné d'informatique et de nouvelles technologies, mon projet professionnel s'oriente vers les métiers du web<br />
-            et plus particulièrement celui de développeur web.</p>
+            et plus particulièrement celui de développeur web Backend.</p>
+            <p class="text-center text-justify">En parallèle de mes études, je suis <strong>développeur web Freelance</strong> (depuis 2018). Je suis à l'écoute de vos propositions pour des <strong>missions de développement web</strong>.</p>
 
             <div id="infos-hobbies" class="row">
               <div id="table-info" class="col-lg-6">
@@ -75,10 +78,6 @@ require_once('parameters.php');
                   <tr>
                     <th class="colored">Date de naissance :</th>
                     <td>01/09/1997</td>
-                  </tr>
-                  <tr>
-                    <th class="colored">Téléphone :</th>
-                    <td><a href="tel:0620070955" alt="Numéro de téléphone"> Appelez-moi</a></td>
                   </tr>
                   <tr>
                     <th class="colored">Adresse e-mail :</th>
@@ -118,7 +117,24 @@ require_once('parameters.php');
 
               <ul class="timeline">
                 <li><div class="tltitle"><i class="fas fa-briefcase"></i> Expériences</div></li>
+
                 <li>
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
+                      <h4>Développeur web Freelance</h4>
+                      <p>Développeur PHP/Symfony <span style="color: rgb(230, 77, 67);">•</span> Mai 2016 - Aujourd'hui</p>
+                    </div>
+                    <div class="tl-body">
+                      <p>Création d'une auto-entreprise de développement web.</p>
+                      <p><strong>Les missions : </strong></p>
+                      <p> • Car Manager - Mai 2018 : <br />
+                      Développement d'une application web destinée à gérer la flotte de véhicule des sociétés Duotech, Satelix et ARF.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-inverted">
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
@@ -132,7 +148,7 @@ require_once('parameters.php');
                   </div>
                 </li>
 
-                <li class="timeline-inverted">
+                <li>
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
@@ -262,7 +278,7 @@ require_once('parameters.php');
                     <div class="fill"></div>
                   </div>
                 </div>
-                <p class="colored-p">Boostrap</p>
+                <p class="colored-p">Bootstrap</p>
               </div>
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
                 <div class="c100 p50 center tomato">
@@ -413,11 +429,14 @@ require_once('parameters.php');
 
               <?php if(isset($_SESSION['error']) && !empty($_SESSION['error']))
                 {
+                  foreach($_SESSION['error'] as $error)
+                  {
               ?>
               <div class="alert alert-danger">
-                <?= $_SESSION['error']; ?>
+                <?= $error; ?>
               </div>
               <?php unset($_SESSION['error']);
+                }
               }
               ?>
 
@@ -433,6 +452,14 @@ require_once('parameters.php');
               <div class="form-group">
                 <textarea id="message" name="message" class="form-control" placeholder="Message" rows="6" required><?php if(isset($_SESSION['message'])) echo $_SESSION['message']; ?></textarea>
               </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="defaultCheck1" name="accept-form" value="" required>
+                  <label class="form-check-label" for="defaultCheck1">
+                    En soumettant ce formulaire, j'accepte que les informations saisies dans ce formulaire soient utilisées pour permettre de me recontacter dans le cadre de la relation commerciale qui découle de cette demande de devis.
+                  </label>
+                </div>
+              </div>
               <div class="g-recaptcha" data-sitekey="<?= $publicKey; ?>"></div>
               <button id="submitForm" type="submit" class="btn btn-primary col-md-12"><i class="fas fa-share-square"></i> Envoyer</button>
             </form>
@@ -444,7 +471,7 @@ require_once('parameters.php');
       <footer class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <p class="text-center"><a href="index.php">Arthur Geay • Portfolio</a> - Design inspiré de <a href="https://themeforest.net/item/md-resume-psd-template/7640505?s_rank=1">bigpsfan</a></p>
+            <p class="text-center"><a href="index.php">Arthur Geay • Portfolio</a> - <a href="mentions-legales.html">Mentions légales</a></p>
           </div>
         </div>
       </footer>
