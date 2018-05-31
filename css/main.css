@@ -679,6 +679,12 @@ form
   margin-top: 15px;
 }
 
+
+#legals p
+{
+  text-align: justify;
+}
+
 /* END SECTION CONTACT */
 
 footer
