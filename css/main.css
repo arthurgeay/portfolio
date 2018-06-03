@@ -6,6 +6,17 @@
   overflow-x: hidden;
 }
 
+body
+{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+}
+
 body,a
 {
   color: rgb(162, 167, 169);

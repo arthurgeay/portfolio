@@ -471,7 +471,7 @@ require_once('parameters.php');
       <footer class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <p class="text-center"><a href="index.php">Arthur Geay • Portfolio</a> - <a href="mentions-legales.html">Mentions légales</a></p>
+            <p class="text-center"><a href="index.php">Arthur Geay • Portfolio</a> - <a href="mentions-legales.html">Mentions légales</a> - <a href="politique-protection-donnees-personnelles.html">Politique de protection des données personnelles</a></p>
           </div>
         </div>
       </footer>
