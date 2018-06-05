@@ -77,6 +77,29 @@ nav
   box-shadow: 1px 0px 8px black;
 }
 
+.cmenu 
+{
+  flex-wrap: nowrap;
+  width: 100%;
+  flex: 1;
+}
+
+.lbrand
+{
+  justify-content: center;
+  flex: 1;
+}
+
+/* Media queries menu */
+
+@media (min-width: 992px ) {
+  .navbar-btn 
+  {
+    margin-left: 10px;
+  }
+}
+
+
 th
 {
   padding-right: 30px;
@@ -208,6 +231,19 @@ table
 {
   background: rgb(230, 77, 67);
   border: 1px solid rgb(232, 79, 69);
+}
+
+.btn-outline-primary {
+  background: none;
+  border: 1px solid rgb(232, 79, 69);
+  color: rgb(230, 77, 67);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active
+{
+  background: rgb(230, 77, 67)!important;
+  border: 1px solid rgb(232, 79, 69)!important;
+  color: white!important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active
@@ -707,3 +743,4 @@ footer p
 {
   margin-top: 15px;
 }
+
