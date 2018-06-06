@@ -1,5 +1,5 @@
 
-/* GENERAL */
+/* ======= GENERAL ======= */
 
 .overflow-x
 {
@@ -13,15 +13,14 @@ body
   flex-direction: column;
 }
 
-.container {
-  flex-grow: 1;
-}
-
 body,a
 {
   color: rgb(162, 167, 169);
   font-family: 'Open Sans', sans-serif;
 }
+
+
+/* =========== TITLES  ========= */
 
 h1, h2, h3, h4, .tltitle
 {
@@ -50,6 +49,8 @@ section h2
   color: rgb(122, 132, 139);
 }
 
+/* =========== LINKS  ========= */
+
 a
 {
   transition: color 0.5s;
@@ -62,14 +63,50 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover
   transition: color 0.5s;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link
+
+/* ==== BUTTONS ==== */
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-primary, .btn-primary:visited
 {
+  background: rgb(230, 77, 67);
+  border: 1px solid rgb(232, 79, 69);
+}
+
+.btn-outline-primary {
+  background: none;
+  border: 1px solid rgb(232, 79, 69);
   color: rgb(230, 77, 67);
 }
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active
+{
+  background: rgb(230, 77, 67)!important;
+  border: 1px solid rgb(232, 79, 69)!important;
+  color: white!important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active
+{
+  background: rgb(210, 50, 40)!important;
+  border: 1px solid rgb(232, 79, 69)!important;
+}
+
+
+/* =========== HEADER & NAV  ========= */
 
 header
 {
   color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link
+{
+  color: rgb(230, 77, 67);
 }
 
 nav
@@ -77,42 +114,43 @@ nav
   box-shadow: 1px 0px 8px black;
 }
 
-.cmenu 
+.flex-size
 {
-  flex-wrap: nowrap;
-  width: 100%;
   flex: 1;
 }
 
-.lbrand
-{
-  justify-content: center;
-  flex: 1;
-}
-
-/* Media queries menu */
+/* == Media queries Header & Nav == */
 
 @media (min-width: 992px ) {
-  .navbar-btn 
+  .navbar-btn
   {
     margin-left: 10px;
   }
 }
 
-
-th
-{
-  padding-right: 30px;
+@media (max-width: 992px ) {
+  .empty {
+    display: none;
+  }
 }
 
-td
+/* ========= FOOTER ======= */
+footer
 {
-  text-align: center;
+  background: rgb(241, 242, 247);
 }
 
-/* END GENERAL */
+footer p
+{
+  margin-top: 15px;
+}
 
-/* Background Image */
+
+
+
+
+
+/* ===== BACKGROUND IMAGE ===== */
 #background
 {
   background: linear-gradient(
@@ -124,9 +162,17 @@ td
  height: 400px;
 }
 
-/* END BACKGROUND */
 
-/* Socials & Icons */
+
+
+/* ======= CONTAINER ==== */
+
+.container {
+  flex-grow: 1;
+}
+
+
+/* ===== SOCIALS ICONS ===== */
 
 #socials
 {
@@ -174,16 +220,21 @@ td
   margin-top: 40px;
 }
 
-/*  END SOCIALS & ICONS */
 
-/** img profil **/
+
+
+/** ==== IMG PROFILE ==== **/
+
 .profile-img
 {
   margin-top: 35px;
   border: 6px solid rgb(242,242, 242);
 }
 
-/* Section about */
+
+
+/* ==== SECTION ABOUT ==== */
+
 #about
 {
   margin-top: 130px;
@@ -211,6 +262,8 @@ table
   font-size: 1.4em;
 }
 
+/* == MEDIA QUERIES SECTION ABOUT == */
+
 @media (max-width: 995px) {
   #table-info {
     margin-bottom: 50px;
@@ -222,35 +275,7 @@ table
   margin-top: 30px;
 }
 
-.btn:focus, .btn:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.btn-primary, .btn-primary:visited
-{
-  background: rgb(230, 77, 67);
-  border: 1px solid rgb(232, 79, 69);
-}
-
-.btn-outline-primary {
-  background: none;
-  border: 1px solid rgb(232, 79, 69);
-  color: rgb(230, 77, 67);
-}
-
-.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active
-{
-  background: rgb(230, 77, 67)!important;
-  border: 1px solid rgb(232, 79, 69)!important;
-  color: white!important;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active
-{
-  background: rgb(210, 50, 40)!important;
-  border: 1px solid rgb(232, 79, 69)!important;
-}
+/* Icons hobbies */
 
 .circle-icon {
     background: rgb(241, 241, 241);
@@ -273,11 +298,10 @@ table
   transition: color 0.5s, background 0.5s;
 }
 
-/* END SECTION ABOUT */
 
 
 
-/* Section Resume */
+/* ===== SECTION RESUME ===== */
 
 #resume
 {
@@ -504,7 +528,7 @@ li:hover .timeline-panel:after
   margin-top: 5px;
 }
 
-/** media queries **/
+/** media queries timeline **/
 @media (max-width: 991px) {
   .timeline li .timeline-panel {
     width: 44%;
@@ -599,9 +623,8 @@ li:hover .timeline-panel:after
   }
 }
 
-/* END SECTION RESUME  */
 
-/* Section skills */
+/* ===== SECTION SKILLS =====  */
 
 #skills-percentage
 {
@@ -634,12 +657,9 @@ li:hover .timeline-panel:after
 }
 
 
-/* END SECTION SKILLS */
 
 
-
-
-/* Section project */
+/* ===== SECTION PROJECT =====  */
 
 #project
 {
@@ -680,6 +700,12 @@ li:hover .timeline-panel:after
   margin-bottom: 25px;
 }
 
+.box-shadow
+{
+  box-shadow: -2px 2px 10px -3px rgba(0,0,0,0.75);
+}
+
+/* == Media queries section project == */
 @media (max-width: 449px)
 {
   #btn-margin
@@ -688,17 +714,11 @@ li:hover .timeline-panel:after
   }
 }
 
-.box-shadow
-{
-  box-shadow: -2px 2px 10px -3px rgba(0,0,0,0.75);
-}
-
-/* END SECTION PROJECT */
 
 
 
 
-/* Section Contact */
+/* ===== SECTION CONTACT ===== */
 
 #contact
 {
@@ -726,21 +746,9 @@ form
   margin-top: 15px;
 }
 
+/* ====== LEGALS PAGE ====== */
 
 #legals p
 {
   text-align: justify;
 }
-
-/* END SECTION CONTACT */
-
-footer
-{
-  background: rgb(241, 242, 247);
-}
-
-footer p
-{
-  margin-top: 15px;
-}
-
