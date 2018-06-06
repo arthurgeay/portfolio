@@ -134,6 +134,17 @@ nav
   }
 }
 
+/* Noscript display */
+noscript .container-fluid {
+  background: rgb(230, 77, 67);
+  color: white;
+  top: 56px;
+  position: fixed;
+  z-index: 2;
+  height: 25px;
+  width: 100%;
+}
+
 /* ========= FOOTER ======= */
 footer
 {

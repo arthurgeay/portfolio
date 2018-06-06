@@ -19,6 +19,11 @@ require_once('parameters.php');
   <body id="page-top" class="overflow-x">
       <header>
         <div id="background">
+          <noscript>
+            <div class="container-fluid text-center">
+              <p>Veuillez utiliser un navigateur internet moderne avec JavaScript activé pour naviguer sur arthurgeay.fr</p>
+            </div>
+          </noscript>
           <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
             <div class="container">
               <a class="navbar-brand flex-size" href="#page-top">Arthur Geay</a>
