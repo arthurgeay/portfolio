@@ -60,7 +60,7 @@ require_once('parameters.php');
               <a class="icon-social" href="https://github.com/arthurgeay"><i id="github-icon" class="fab fa-github-square" style="font-size: 2em;"></i></a>
               <a class="icon-social" href="https://twitter.com/arthur_geay"><i id="twitter-icon" class="fab fa-twitter-square" style="font-size: 2em;"></i></a>
             </div>
-            <img class="rounded-circle profile-img" src="img/profile.jpeg" alt="Photo de profil" width="200px" />
+            <img class="rounded-circle profile-img lazyload" data-src="img/profile.jpeg" alt="Photo de profil" width="200px" />
           </div>
         </div>
 
@@ -317,7 +317,7 @@ require_once('parameters.php');
             <div class="col-md-4 img-wrap school-item">
               <a href="https://moncoutant.arthurgeay.fr/">
                 <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/moncoutant2.jpg" alt="Card image cap">
+                <img class="card-img-top lazyload" data-src="img/moncoutant2.jpg" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text text-center">Réalisation d'un site web pour les activités culturelles de ma ville. <br />
                     <span class="badge badge-pill badge-danger">HTML & CSS</span>
@@ -330,7 +330,7 @@ require_once('parameters.php');
 
             <div class="col-md-4 img-wrap school-item">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/project.jpg" alt="Card image cap">
+                <img class="card-img-top lazyload" data-src="img/project.jpg" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text text-center">Simulation - Gestion de projet du salon du chocolat de Paris. <br />
                     <span class="badge badge-pill badge-light">Gestion de projet</span>
@@ -342,7 +342,7 @@ require_once('parameters.php');
             <div class="col-md-4 img-wrap school-item">
               <a href="https://jeanforteroche.arthurgeay.fr/">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="img/forteroche2.jpg" alt="Card image cap">
+                  <img class="card-img-top lazyload" data-src="img/forteroche2.jpg" alt="Card image cap">
                   <div class="card-body">
                     <p class="card-text text-center">Réalisation d'un blog pour un écrivain ne souhaitant pas avoir un blog sous WordPress.<br />
                       <span class="badge badge-pill badge-danger">HTML & CSS</span>
@@ -357,7 +357,7 @@ require_once('parameters.php');
             <div class="col-md-4 img-wrap school-item">
               <a href="https://louvre.arthurgeay.fr/">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="img/louvre2.jpg" alt="Card image cap">
+                  <img class="card-img-top lazyload" data-src="img/louvre2.jpg" alt="Card image cap">
                   <div class="card-body">
                     <p class="card-text text-center">Réalisation d'un système de billeterie pour le musée du Louvre. <br />
                       <span class="badge badge-pill badge-danger">HTML & CSS</span>
@@ -372,7 +372,7 @@ require_once('parameters.php');
             <div class="col-md-4 img-wrap school-item">
               <a href="https://nao.arthurgeay.fr/">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="img/nao.jpg" alt="Card image cap">
+                  <img class="card-img-top lazyload" data-src="img/nao.jpg" alt="Card image cap">
                   <div class="card-body">
                     <p class="card-text text-center">Réalisation d'une application web collaborative de saisie d'observation d'espèces d'oiseaux. <br />
                       <span class="badge badge-pill badge-danger">HTML & CSS</span>
@@ -387,7 +387,7 @@ require_once('parameters.php');
             <div class="col-md-4 img-wrap school-item">
               <a href="https://openclassrooms.com/courses/4840981?status=waiting-for-publication">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="img/course-joomla.png" alt="Card image cap">
+                  <img class="card-img-top lazyload" data-src="img/course-joomla.png" alt="Card image cap">
                   <div class="card-body">
                     <p class="card-text text-center">Rédaction d'un cours pour apprendre à créer un site web avec Joomla sur OpenClassrooms. <br />
                       <span class="badge badge-pill badge-light">Pédagogie / Enseignement</span>
@@ -399,7 +399,7 @@ require_once('parameters.php');
 
             <div class="col-md-4 img-wrap pro-item">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/carmanager.png" alt="Card image cap">
+                <img class="card-img-top lazyload" data-src="img/carmanager.png" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text text-center">Réalisation d'une application web de gestion de flotte de véhicule pour la société Duotech. <br />
                     <span class="badge badge-pill badge-danger">HTML & CSS</span>
@@ -482,8 +482,10 @@ require_once('parameters.php');
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/lazyload.min.js"></script>
+    <script>lazyload();</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/notify.js"></script>
