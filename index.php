@@ -139,6 +139,8 @@ require_once('parameters.php');
                       <p><strong>Les missions : </strong></p>
                       <p> • Car Manager - Mai 2018 : <br />
                       Développement d'une application web destinée à gérer la flotte de véhicule des sociétés Duotech, Satelix et ARF.</p>
+                      <p> • Valerie-dauphin.fr - Juin 2018 : <br />
+                      Développement d'un portfolio pour l'auteure de littérature jeunesse Valérie Dauphin.</p>
                     </div>
                   </div>
                 </li>
@@ -413,6 +415,20 @@ require_once('parameters.php');
                   </p>
                 </div>
               </div>
+            </div>
+
+            <div class="col-md-4 img-wrap pro-item">
+              <a href="https://valerie-dauphin.fr">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top lazyload" data-src="img/valerie-dauphin.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text text-center">Réalisation d'un site web (portfolio) pour une auteure de littérature jeunesse. <br />
+                      <span class="badge badge-pill badge-danger">HTML & CSS</span>
+                      <span class="badge badge-pill badge-info">WordPress</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
 
           </div>
