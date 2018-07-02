@@ -139,7 +139,7 @@ require_once('parameters.php');
                       <p><strong>Les missions : </strong></p>
                       <p> • Car Manager - Mai 2018 : <br />
                       Développement d'une application web destinée à gérer la flotte de véhicule des sociétés Duotech, Satelix et ARF.</p>
-                      <p> • Valerie-dauphin.fr - Juin 2018 : <br />
+                      <p> • <a href="https://valerie-dauphin.fr">Valerie-dauphin.fr</a> - Juin 2018 : <br />
                       Développement d'un portfolio pour l'auteure de littérature jeunesse Valérie Dauphin.</p>
                     </div>
                   </div>
