@@ -254,7 +254,7 @@ require_once('parameters.php');
             <hr>
             <div id="skills-percentage" class="row">
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p100 center tomato">
+                <div class="c100 p100 center white">
                   <span><i class="icon-html5-alt" style="color: rgb(211, 58, 54)"></i> <i class="icon-css3" style="color: rgb(47, 80, 220)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
@@ -265,7 +265,7 @@ require_once('parameters.php');
               </div>
 
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p100 center tomato">
+                <div class="c100 p100 center white">
                   <span><i class="icon-php" style="color: rgb(120, 124, 176)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
@@ -276,7 +276,7 @@ require_once('parameters.php');
               </div>
 
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p100 center tomato">
+                <div class="c100 p100 center white">
                   <span><i class="icon-mysql" style="color: rgb(89, 107, 125)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
@@ -287,7 +287,7 @@ require_once('parameters.php');
               </div>
 
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p100 center tomato">
+                <div class="c100 p100 center white">
                   <span><i class="icon-symfony" style="color: #000000"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
@@ -298,7 +298,7 @@ require_once('parameters.php');
               </div>
 
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p100 center tomato">
+                <div class="c100 p100 center white">
                   <span><i class="icon-javascript" style="color: rgb(237, 219, 103)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
@@ -309,7 +309,7 @@ require_once('parameters.php');
               </div>
 
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p100 center tomato">
+                <div class="c100 p100 center white">
                   <span><i class="icon-wordpress" style="color: rgb(60, 117, 152)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
@@ -320,7 +320,7 @@ require_once('parameters.php');
               </div>
 
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p100 center tomato">
+                <div class="c100 p100 center white">
                   <span><i class="icon-git" style="color: rgb(222, 91, 64)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
@@ -331,7 +331,7 @@ require_once('parameters.php');
               </div>
 
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p100 center tomato">
+                <div class="c100 p100 center white">
                   <span><i class="icon-bootstrap" style="color: rgb(88, 65, 131)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>

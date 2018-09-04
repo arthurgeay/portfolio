@@ -46,13 +46,18 @@
   border-radius: 50%;
   float: left;
   margin: 0 0.1em 0.1em 0;
-  background-color: #cccccc;
+  background-color: white;
+  -webkit-box-shadow: 6px 4px 23px -12px rgba(0,0,0,1);
+-moz-box-shadow: 6px 4px 23px -12px rgba(0,0,0,1);
+box-shadow: 6px 4px 23px -12px rgba(0,0,0,1);
+transition: box-shadow 0.3s ease-in-out;
 }
 .c100 *, .c100 *:before, .c100 *:after {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+
 .c100.center {
   float: none;
   margin: 0 auto;
@@ -115,6 +120,7 @@
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
+  background-color: transparent;
 }
 .c100 .slice {
   position: absolute;
@@ -824,6 +830,9 @@
 }
 .c100:hover {
   cursor: default;
+  -webkit-box-shadow: 6px 1px 33px -11px rgba(0,0,0,1);
+  -moz-box-shadow: 6px 1px 33px -11px rgba(0,0,0,1);
+  box-shadow: 6px 1px 33px -11px rgba(0,0,0,1);
 }
 .c100:hover > span {
   width: 3.33em;
@@ -878,15 +887,15 @@
   color: rgb(230, 77, 67);
 }
 
-.c100.tomato .bar, .c100.tomato .fill {
-  border-color: rgb(230, 77, 67)!important;
+.c100.white .bar, .c100.white .fill {
+  border-color: white!important;
 }
-.c100.tomato:hover > span {
-  color: rgb(230, 77, 67);
+.c100.white:hover > span {
+  color: white;
 }
-.c100.tomato.dark .bar, .c100.tomato.dark .fill {
-  border-color: rgb(230, 77, 67) !important;
+.c100.white.dark .bar, .c100.white.dark .fill {
+  border-color: white !important;
 }
-.c100.tomato.dark:hover > span {
-  color: rgb(230, 77, 67);
+.c100.white.dark:hover > span {
+  color: white;
 }
