@@ -63,6 +63,11 @@ a:hover, .navbar-light .navbar-nav .nav-link:hover
   transition: color 0.5s;
 }
 
+.company-link
+{
+  color: rgb(46, 63, 81);
+}
+
 
 /* ==== BUTTONS ==== */
 
@@ -376,16 +381,12 @@ table
 
 /** timeline panels **/
 .timeline li .timeline-panel {
+  background: #fff;
   width: 46%;
   float: left;
   padding: 20px;
   position: relative;
   text-align: left;
-  transition: background 1.5s, border 0.5s, box-shadow 0.5s;
-}
-
-.timeline li .timeline-panel:hover {
-  background: #fff;
   border: 1px solid #d4d4d4;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -394,25 +395,15 @@ table
   -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
 }
+
 
 li:hover .tl-circ
 {
   background: rgb(230, 77, 67)!important;
 }
 
-li:hover .timeline-panel
-{
-  background: #fff;
-  border: 1px solid #d4d4d4;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-}
 
-li:hover .timeline-panel:before
+li .timeline-panel:before
 {
   position: absolute;
   top: 26px;
@@ -425,7 +416,7 @@ li:hover .timeline-panel:before
   content: " ";
 }
 
-li:hover .timeline-panel:after
+li .timeline-panel:after
 {
   position: absolute;
   top: 27px;

@@ -12,6 +12,7 @@ require_once('parameters.php');
     <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/circle.css">
     <title>Portfolio - Arthur Geay</title>
@@ -131,6 +132,21 @@ require_once('parameters.php');
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
+                      <h4>Développeur web</h4>
+                      <p><a href="https://www.envoliis.com/" class="company-link">ENVOLiiS</a> <span style="color: rgb(230, 77, 67);">•</span> Juillet 2018 - Août 2018</p>
+                    </div>
+                    <div class="tl-body">
+                      <p><strong>Les missions : </strong></p>
+                      <p> • Développement d'un portail Power BI</p>
+                      <p> • Développement d'un outil d'import de contrat</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-inverted">
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
                       <h4>Développeur web Freelance</h4>
                       <p>Développeur PHP/Symfony <span style="color: rgb(230, 77, 67);">•</span> Mai 2016 - Aujourd'hui</p>
                     </div>
@@ -145,7 +161,7 @@ require_once('parameters.php');
                   </div>
                 </li>
 
-                <li class="timeline-inverted">
+                <li>
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
@@ -159,7 +175,7 @@ require_once('parameters.php');
                   </div>
                 </li>
 
-                <li>
+                <li class="timeline-inverted">
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
@@ -178,33 +194,49 @@ require_once('parameters.php');
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
-                      <h4>Chef de projet Multimédia</h4>
-                      <p>OpenClassrooms / IESA Multimédia <span style="color: rgb(230, 77, 67);">•</span> Janvier 2017 - Janvier 2018</p>
+                      <h4>Bachelor informatique et systèmes d'information</h4>
+                      <p><a href="https://www.ynov.com/formation/ynov-informatique/" class="company-link">Ynov Informatique</a> <span style="color: rgb(230, 77, 67);">•</span> Septembre 2018 - Aujourd'hui</p>
                     </div>
                     <div class="tl-body">
+                      <p>La formation d’Ynov Informatique prépare au titre d’Expert Informatique et Systèmes d’Information, enregistré au Répertoire National de la Certification Professionnelle (RNCP) au niveau I.)</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-inverted">
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
+                      <h4>Chef de projet Multimédia</h4>
+                      <p><a href="https://openclassrooms.com/fr/paths/21-chef-de-projet-multimedia-developpement" class="company-link">OpenClassrooms</a> / <a href="https://www.iesamultimedia.fr/" class="company-link">IESA Multimédia</a> <span style="color: rgb(230, 77, 67);">•</span> Janvier 2017 - Janvier 2018</p>
+                    </div>
+                    <div class="tl-body">
+                      <p>Titre professionnel de Chef de projet multimédia enregistré au Répertoire National de la Certification Professionnelle (RNCP) au niveau II.)</p>
                       <p>Parcours de formation fonctionnant en "mode projet". </p>
                       <p>Six projets professionnalisant ont été réalisés durant le parcours (système de billeterie en ligne pour le Musée du Louvre, application web collaborative de saisie d'observation...)</p>
                     </div>
                   </div>
                 </li>
-                <li class="timeline-inverted">
+
+                <li>
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
                       <h4>L1 Arts du Spectacle</h4>
-                      <p>Université de Poitiers <span style="color: rgb(230, 77, 67);">•</span> 2015 - 2016 </p>
+                      <p><a href="http://formations.univ-poitiers.fr/fr/index/licence-XA/licence-XA/licence-arts-du-spectacle-program-licence-arts-du-spectacle.html" class="company-link">Université de Poitiers</a> <span style="color: rgb(230, 77, 67);">•</span> 2015 - 2016 </p>
                     </div>
                     <div class="tl-body">
                       <p>Etude des arts du spectacle (Cinéma & Théâtre).</p>
                     </div>
                   </div>
                 </li>
-                <li>
+
+                <li class="timeline-inverted">
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
                       <h4>Baccalauréat ES</h4>
-                      <p>Lycée Maurice Genevoix <span style="color: rgb(230, 77, 67);">•</span> 2015</p>
+                      <p><a href="http://www.genevoix-signoret-vinci.fr/" class="company-link">Lycée Maurice Genevoix</a> <span style="color: rgb(230, 77, 67);">•</span> 2015</p>
                     </div>
                   </div>
                 </li>
@@ -222,8 +254,8 @@ require_once('parameters.php');
             <hr>
             <div id="skills-percentage" class="row">
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p80 center tomato">
-                  <span>80%</span>
+                <div class="c100 p100 center tomato">
+                  <span><i class="icon-html5-alt" style="color: rgb(211, 58, 54)"></i> <i class="icon-css3" style="color: rgb(47, 80, 220)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
                     <div class="fill"></div>
@@ -231,19 +263,32 @@ require_once('parameters.php');
                 </div>
                 <p class="colored-p">Html & CSS</p>
               </div>
+
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p65 center tomato">
-                  <span>65%</span>
+                <div class="c100 p100 center tomato">
+                  <span><i class="icon-php" style="color: rgb(120, 124, 176)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
                     <div class="fill"></div>
                   </div>
                 </div>
-                <p class="colored-p">Php & Sql</p>
+                <p class="colored-p">Php</p>
               </div>
+
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p60 center tomato">
-                  <span>60%</span>
+                <div class="c100 p100 center tomato">
+                  <span><i class="icon-mysql" style="color: rgb(89, 107, 125)"></i></span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+                <p class="colored-p">MySQL</p>
+              </div>
+
+              <div class="col-md-3 col-sm-3 col-6 percent text-center">
+                <div class="c100 p100 center tomato">
+                  <span><i class="icon-symfony" style="color: #000000"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
                     <div class="fill"></div>
@@ -251,9 +296,10 @@ require_once('parameters.php');
                 </div>
                 <p class="colored-p">Symfony</p>
               </div>
+
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p60 center tomato">
-                  <span>60%</span>
+                <div class="c100 p100 center tomato">
+                  <span><i class="icon-javascript" style="color: rgb(237, 219, 103)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
                     <div class="fill"></div>
@@ -261,9 +307,10 @@ require_once('parameters.php');
                 </div>
                 <p class="colored-p">Javascript</p>
               </div>
+
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p80 center tomato">
-                  <span>80%</span>
+                <div class="c100 p100 center tomato">
+                  <span><i class="icon-wordpress" style="color: rgb(60, 117, 152)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
                     <div class="fill"></div>
@@ -271,9 +318,10 @@ require_once('parameters.php');
                 </div>
                 <p class="colored-p">WordPress</p>
               </div>
+
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p55 center tomato">
-                  <span>55%</span>
+                <div class="c100 p100 center tomato">
+                  <span><i class="icon-git" style="color: rgb(222, 91, 64)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
                     <div class="fill"></div>
@@ -281,9 +329,10 @@ require_once('parameters.php');
                 </div>
                 <p class="colored-p">Git & Github</p>
               </div>
+
               <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p70 center tomato">
-                  <span>70%</span>
+                <div class="c100 p100 center tomato">
+                  <span><i class="icon-bootstrap" style="color: rgb(88, 65, 131)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
                     <div class="fill"></div>
@@ -291,16 +340,7 @@ require_once('parameters.php');
                 </div>
                 <p class="colored-p">Bootstrap</p>
               </div>
-              <div class="col-md-3 col-sm-3 col-6 percent text-center">
-                <div class="c100 p50 center tomato">
-                  <span>50%</span>
-                  <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                  </div>
-                </div>
-                <p class="colored-p">Photoshop</p>
-              </div>
+
             </div>
           </div>
         </div>
