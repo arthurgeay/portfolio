@@ -148,7 +148,7 @@ require_once('parameters.php');
                   <div class="timeline-panel">
                     <div class="tl-heading">
                       <h4>Développeur web Freelance</h4>
-                      <p>Développeur PHP/Symfony <span style="color: rgb(230, 77, 67);">•</span> Mai 2016 - Aujourd'hui</p>
+                      <p>Développeur PHP/Symfony <span style="color: rgb(230, 77, 67);">•</span> Mai 2018 - Aujourd'hui</p>
                     </div>
                     <div class="tl-body">
                       <p>Création d'une auto-entreprise de développement web.</p>
