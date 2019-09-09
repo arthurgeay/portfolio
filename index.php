@@ -132,6 +132,37 @@ require_once('parameters.php');
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
+                      <h4>Testeur de produit</h4>
+                      <p><a href="https://www.envoliis.com/" class="company-link">ENVOLiiS</a> <span style="color: rgb(230, 77, 67);">•</span> Juillet 2019 - Août 2019</p>
+                    </div>
+                    <div class="tl-body">
+                      <p><strong>Les missions : </strong></p>
+                      <p> • Mise en place d'un POC sur plusieurs solutions</p>
+                      <p> • Intégration de données existantes dans les nouveaux outils</p>
+                      <p> • Documentation</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-inverted">
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
+                      <h4>Développeur</h4>
+                      <p><a href="https://www.envoliis.com/" class="company-link">ENVOLiiS</a> <span style="color: rgb(230, 77, 67);">•</span> Novembre 2018 - Juin 2019</p>
+                    </div>
+                    <div class="tl-body">
+                      <p><strong>Les missions : </strong></p>
+                      <p> • Débôguage d'une base de données Access</p>
+                      <p> • Remise en fonctionnement de la base de données</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="tl-circ"></div>
+                  <div class="timeline-panel">
+                    <div class="tl-heading">
                       <h4>Développeur web</h4>
                       <p><a href="https://www.envoliis.com/" class="company-link">ENVOLiiS</a> <span style="color: rgb(230, 77, 67);">•</span> Juillet 2018 - Août 2018</p>
                     </div>
