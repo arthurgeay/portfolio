@@ -148,7 +148,7 @@ require_once('parameters.php');
                   <div class="tl-circ"></div>
                   <div class="timeline-panel">
                     <div class="tl-heading">
-                      <h4>Développeur</h4>
+                      <h4>Développeur Base de données</h4>
                       <p><a href="https://www.envoliis.com/" class="company-link">ENVOLiiS</a> <span style="color: rgb(230, 77, 67);">•</span> Novembre 2018 - Juin 2019</p>
                     </div>
                     <div class="tl-body">
