@@ -372,6 +372,28 @@ require_once('parameters.php');
                 <p class="colored-p">Bootstrap</p>
               </div>
 
+              <div class="col-sm-6 col-6 percent text-center">
+                <div class="c100 p100 center white">
+                  <span><i class="fab fa-python" style="color: rgb(68, 115, 162)"></i></span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+                <p class="colored-p">Python</p>
+              </div>
+
+              <div class="col-sm-6 col-6 percent text-center">
+                <div class="c100 p100 center white">
+                  <span><i class="icon-java" style="color: rgb(91, 125, 163)"></i></span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+                <p class="colored-p">Java</p>
+              </div>
+
             </div>
           </div>
         </div>
