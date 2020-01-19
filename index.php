@@ -372,7 +372,7 @@ require_once('parameters.php');
                 <p class="colored-p">Bootstrap</p>
               </div>
 
-              <div class="col-sm-6 col-6 percent text-center">
+              <div class="col-md-3 col-sm-3 col-6  percent text-center">
                 <div class="c100 p100 center white">
                   <span><i class="fab fa-python" style="color: rgb(68, 115, 162)"></i></span>
                   <div class="slice">
@@ -383,16 +383,39 @@ require_once('parameters.php');
                 <p class="colored-p">Python</p>
               </div>
 
-              <div class="col-sm-6 col-6 percent text-center">
+              <div class="col-md-3 col-sm-3 col-6  percent text-center">
                 <div class="c100 p100 center white">
-                  <span><i class="icon-java" style="color: rgb(91, 125, 163)"></i></span>
+                  <span><i class="fab fa-node" style="color: rgb(92, 151, 87)"></i></span>
                   <div class="slice">
                     <div class="bar"></div>
                     <div class="fill"></div>
                   </div>
                 </div>
-                <p class="colored-p">Java</p>
+                <p class="colored-p">Nodejs</p>
               </div>
+
+              <div class="col-md-3 col-sm-3 col-6  percent text-center">
+                <div class="c100 p100 center white">
+                  <span><i class="fab fa-angular" style="color: rgb(191, 16, 42)"></i></span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+                <p class="colored-p">Angular</p>
+              </div>
+
+              <div class="col-md-3 col-sm-3 col-6 percent text-center">
+                <div class="c100 p100 center white">
+                  <span><i class="fas fa-mobile" style="color: rgb(60, 125, 250)"></i></span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+                <p class="colored-p">Ionic</p>
+              </div>
+              
 
             </div>
           </div>
@@ -522,6 +545,36 @@ require_once('parameters.php');
                   </div>
                 </div>
               </a>
+            </div>
+
+            <div class="col-md-4 img-wrap school-item">
+              <a href="https://github.com/arthurgeay/iot-plante">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top lazyload" data-src="img/iot-flowers.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text text-center">Développement d'un objet connecté et d'une interface web permettant d'aider les personnes voulant faire pousser des plantes chez eux.<br />
+                      <span class="badge badge-pill badge-warning">Python</span>
+                      <span class="badge badge-pill badge-primary">PHP</span>
+                      <span class="badge badge-pill badge-info">SQL</span>
+                      <span class="badge badge-pill badge-success">C</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4 img-wrap school-item">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top lazyload" data-src="img/tricycle-extended.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text text-center">Réalisation d'une application mobile et d'un objet connecté permettant aux utilisateurs de trier leurs déchets.<br />
+                      <span class="badge badge-pill badge-danger">Angular</span>
+                      <span class="badge badge-pill badge-primary">Ionic</span>
+                      <span class="badge badge-pill badge-success">C</span>
+                      <span class="badge badge-pill badge-warning">Nodejs / ExpressJs</span>
+                    </p>
+                  </div>
+                </div>
             </div>
 
           </div>
