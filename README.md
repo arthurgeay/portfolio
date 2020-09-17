@@ -6,11 +6,11 @@
 ## Fonctionnement
 
 Le site présente différentes sections : 
-- A propos : Liste les informations de base sur l'auteur
-- Parcours : Détails des parcours professionnels et scolaires
-- Compétences : Détails des compétences acquises
-- Réalisations : Liste des projets réalisés (scolaire ou professionnel)
-- Contact : Lien pour me contacter
+- **A propos** : Liste les informations de base sur l'auteur
+- **Parcours** : Détails des parcours professionnels et scolaires
+- **Compétences** : Détails des compétences acquises
+- **Réalisations** : Liste des projets réalisés (scolaire ou professionnel)
+- **Contact** : Lien pour me contacter
 
 Un menu est affiché en haut de l'écran pour pouvoir aller directement à la section voulue.
 
